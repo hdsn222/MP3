@@ -1,0 +1,3 @@
+Question 1:
+This type of code smell is duplicating code. We have duplicate expressions in the same class. We have duplicate methods in the same class.
+We could fix this by using one method for both cases instead of having two methods do the exact same thing. 
