@@ -348,6 +348,11 @@ public class Jenkins extends AbstractCIBase implements DirectlyModifiableTopLeve
      */
     private Boolean useSecurity;
 
+    public void updateAndTrim(){
+        this.updateComputerList();
+     	this.trimLabels();
+    }
+
     /**
      * Controls how the
      * <a href="http://en.wikipedia.org/wiki/Authorization">authorization</a>
