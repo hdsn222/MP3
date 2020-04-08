@@ -1,9 +1,9 @@
 Question 1:
-This type of code smell is duplicating code. We have duplicate expressions in the same class. We have duplicate methods in the same class.
-We could fix this by using one method for both cases instead of having two methods do the exact same thing. 
+This type of code smell is duplicating code. We have duplicate expressions in the same class that are unneccesary. The methods use almost the exact same code. Instead of having the duplicate expressions, we could create a method. 
+The refactoring we could apply would be by using one method for both cases instead of having duplicated lines that do the exact same thing. 
 
 Question 2: 
-We moved the two statements into a method named updateAndTrim in the Nodes class
+We moved the two statements into a method named updateAndTrim in the Nodes class. We commited our changes and verified that the refactoring did not break out code. 
 
 Question 3: 
 The method does not belong in the Nodes class. This would be feature envy. We can fix this by moving the method to the correct class.
