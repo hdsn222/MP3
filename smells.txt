@@ -9,7 +9,7 @@ Question 3:
 The method does not belong in the Nodes class. This would be feature envy. We can fix this by moving the method to the correct class.
 
 Question 4:
-This type of code smell is duplicating code. We have dublicated statements in the same class. To fix this, we could create a method and then call the method in the four locations where the repeat statements are found. 
+This type of code smell is duplicating code. We have dublicated statements in the same class. To fix this, we could create a for loop instead of intentionlly writing out the if-statements four seperate times. This way, it saves on space while also making the code more legible. 
 
 Question 5: We extracted the three repeated statements to a method named generateKeyPairWithSpec.
 
