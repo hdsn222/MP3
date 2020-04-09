@@ -13,4 +13,4 @@ This type of code smell is duplicating code. We have dublicated statements in th
 
 Question 5: We extracted the three repeated statements to a method named generateKeyPairWithSpec.
 
-Question 6: 
+Question 6: We did not use the "Extract Method" as we did everything manually through putty. We did, however, find two classes that were doing the same thing with the same methods. Instead of having two classes with the same methods and expressions, we used one class and had the duplicate class extend the original. This way, there is only one class, but we do not have to go through the code to change any calls to the duplicate class. We instead just extended the class from the the original so that it may still exist. 
