@@ -25,11 +25,16 @@ package hudson.util;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import hudson.util.DualOutputStream;
 
 /**
  * @author Kohsuke Kawaguchi
  */
-public class ForkOutputStream extends OutputStream {
+public class ForkOutputStream extends DualOutputStream {
+    public ForkOutputStream(OutputStream lhs,OutputStream rhs){
+	    super(lhs,rhs);
+    }
+	/*
     private final OutputStream lhs;
     private final OutputStream rhs;
 
@@ -65,5 +70,5 @@ public class ForkOutputStream extends OutputStream {
     public void close() throws IOException {
         lhs.close();
         rhs.close();
-    }
+    }*/
 }
