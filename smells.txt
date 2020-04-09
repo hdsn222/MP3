@@ -1,16 +1,23 @@
 Question 1:
-This type of code smell is duplicating code. We have duplicate expressions in the same class that are unneccesary. The methods use almost the exact same code. Instead of having the duplicate expressions, we could create a method. 
+This type of code smell is duplicating code. We have duplicate expressions in the same class that are unneccesary. The methods use almost
+the exact same code. Instead of having the duplicate expressions, we could create a method. 
 The refactoring we could apply would be by using one method for both cases instead of having duplicated lines that do the exact same thing. 
 
 Question 2: 
-We moved the two statements into a method named updateAndTrim in the Nodes class. We commited our changes and verified that the refactoring did not break out code. 
+We moved the two statements into a method named updateAndTrim in the Nodes class. We commited our changes and verified that the refactoring
+did not break out code. 
 
 Question 3: 
 The method does not belong in the Nodes class. This would be feature envy. We can fix this by moving the method to the correct class.
 
 Question 4:
-This type of code smell is duplicating code. We have dublicated statements in the same class. To fix this, we could create a for loop instead of intentionlly writing out the if-statements four seperate times. This way, it saves on space while also making the code more legible. 
+This type of code smell is duplicating code. We have dublicated statements in the same class. To fix this, we could create a for loop
+instead of intentionlly writing out the if-statements four seperate times. This way, it saves on space while also making the code more
+legible. 
 
 Question 5: We extracted the three repeated statements to a method named generateKeyPairWithSpec.
 
-Question 6: We did not use the "Extract Method" as we did everything manually through putty. We did, however, find two classes that were doing the same thing with the same methods. Instead of having two classes with the same methods and expressions, we used one class and had the duplicate class extend the original. This way, there is only one class, but we do not have to go through the code to change any calls to the duplicate class. We instead just extended the class from the the original so that it may still exist. 
+Question 6: We did not use the "Extract Method" as we did everything manually through putty. We did, however, find two classes that were
+doing the same thing with the same methods. Instead of having two classes with the same methods and expressions, we used one class and had
+the duplicate class extend the original. This way, there is only one class, but we do not have to go through the code to change any calls
+to the duplicate class. We instead just extended the class from the the original so that it may still exist. 
